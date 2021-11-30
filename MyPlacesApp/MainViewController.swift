@@ -11,8 +11,6 @@ class MainViewController: UITableViewController {
     
     // MARK: - Properties
     
-
-    
     let places = Place.getPlaces()
 
     // MARK: - Methods
@@ -52,5 +50,9 @@ class MainViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func cancelAction(_ segue: UIStoryboardSegue) {
+        
+    }
 
 }

@@ -79,7 +79,7 @@
                     <navigationItem key="navigationItem" title="My Places" id="xdT-1f-CkM">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="RkR-a2-HdG">
                             <connections>
-                                <segue destination="zvX-8C-B4a" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="tYV-iz-bKf"/>
+                                <segue destination="ejX-uY-UlD" kind="presentation" modalTransitionStyle="coverVertical" id="zsd-eF-OHD"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -91,7 +91,7 @@
         <!--New Place-->
         <scene sceneID="f5e-jG-Uz0">
             <objects>
-                <tableViewController id="s51-ML-mDf" customClass="NewPlaceViewController" customModule="MyPlacesApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController modalPresentationStyle="fullScreen" id="s51-ML-mDf" customClass="NewPlaceViewController" customModule="MyPlacesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Pa8-fT-fJh">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -233,7 +233,7 @@
                             <outlet property="delegate" destination="s51-ML-mDf" id="pef-6L-Y8F"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="New Place" largeTitleDisplayMode="always" id="ZrL-tt-geR">
+                    <navigationItem key="navigationItem" title="New Place" id="ZrL-tt-geR">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="aZV-7d-tCF">
                             <connections>
                                 <segue destination="NwN-oz-Fx4" kind="unwind" unwindAction="cancelAction:" id="mDp-Nr-b8b"/>
@@ -245,7 +245,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a7I-mB-fEX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="NwN-oz-Fx4" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1593.8461538461538" y="158.53080568720378"/>
+            <point key="canvasLocation" x="1620" y="159"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eqK-1k-6xS">
@@ -267,23 +267,23 @@
             <point key="canvasLocation" x="-815" y="159"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="Wde-nS-8va">
+        <scene sceneID="iCX-ev-JP6">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zvX-8C-B4a" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="ejX-uY-UlD" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="Se3-3x-hid"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Qht-Xi-jg0">
-                        <rect key="frame" x="0.0" y="44" width="390" height="96"/>
+                    <navigationItem key="navigationItem" id="68d-U8-yWK"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nSE-sJ-fTp">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="s51-ML-mDf" kind="relationship" relationship="rootViewController" id="ajZ-Pw-BWM"/>
+                        <segue destination="s51-ML-mDf" kind="relationship" relationship="rootViewController" id="6Jk-GM-rz4"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Jms-sV-nQe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DBJ-fW-ipo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="769" y="159"/>
+            <point key="canvasLocation" x="795" y="159"/>
         </scene>
     </scenes>
     <resources>

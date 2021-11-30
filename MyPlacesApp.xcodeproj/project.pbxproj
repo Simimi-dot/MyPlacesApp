@@ -304,6 +304,7 @@
 				DEVELOPMENT_TEAM = R8Z5KNL8KD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyPlacesApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "MyPlacesApp photo use";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -332,6 +333,7 @@
 				DEVELOPMENT_TEAM = R8Z5KNL8KD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyPlacesApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "MyPlacesApp photo use";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

@@ -18,11 +18,11 @@ class NewPlaceViewController: UITableViewController {
     @IBOutlet weak var placeLocation: UITextField!
     @IBOutlet weak var placeType: UITextField!
     
-    var newPlace: Place?
     var imageIsChanged = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Убираем лишнюю разлиновку под таблицей
         tableView.tableFooterView = UIView()
         
@@ -71,6 +71,7 @@ class NewPlaceViewController: UITableViewController {
     }
     
     func saveNewPlace() {
+        
         var image: UIImage?
         
         // Если пользователь подставляет свою картинку, то ствится она. Если пользоваель не используе своюкартинку, то подставляется та, которую мы указали
@@ -80,7 +81,11 @@ class NewPlaceViewController: UITableViewController {
             image = UIImage(named: "imagePlaceholder")
         }
         
-        newPlace = Place(name: placeName.text!, location: placeLocation.text, type: placeType.text, image: image, restaurantImage: nil)
+        let imageData = image?.pngData()
+        
+        let newPlace = Place(name: placeName.text!, location: placeLocation.text, type: placeType.text, imageData: imageData)
+        
+        StorageManager.saveObject(newPlace)
     }
     
     @IBAction func cancelAction(_ sender: Any) {
